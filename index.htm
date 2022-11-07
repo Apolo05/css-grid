@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    html, body {
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        background: #7159c0;
+      
+    }
+
+    header{
+        background: yellow;
+        
+        grid-column-start:1;
+        grid-column-end: 3;
+        
+    }
+    main{
+        background: blue;
+        
+        grid-column-start:1;
+        grid-column-end: 2;
+    }
+    aside{
+        background: green;
+      
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    footer{
+        background: red;
+     
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 20vh 70vh 30vh;
+      
+    }
+
+</style>
+</head>
+<body>
+<div>
+  <div class="container">
+  <header> menu</header>
+  <main>texto</main>
+  <aside>exemplos</aside>
+  <footer> Etec</footer>
+</div>
+</body>
+</html>
